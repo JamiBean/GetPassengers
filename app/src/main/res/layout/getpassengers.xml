@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/header_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter One Passenger"
+        android:textSize="24sp"
+        android:background="@color/purple"
+        android:textColor="@color/white"
+        android:gravity="center"
+        :padding="16dp" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+        android:padding="16dp" />
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:inputType="phone"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD PASSENGER"
+        android:onClick="enterPassenger"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/back_to_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RETURN LIST"
+        android:onClick="backToMain"
+        android:layout_gravity="center"
+        android:padding="16dp" />
+
+    <TextView
+        android:id="@+id/accum_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCUMULATING PASSENGER LIST\n-----------------------------"
+        android:background="@color/grey"
+        android:textColor="@color/yellow"
+        android:textSize="18sp"
+        android:padding="16dp" />
+</LinearLayout>
